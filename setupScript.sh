@@ -20,13 +20,21 @@ apt-get install gdebi -y
 
 #Tex editor along with most of the important LaTex files
 apt-get install kile -y
+
+apt-get install scite -y
+
+apt-get install gcc -y
 	
 #Maven install (This link might need to be updated from time to time)
 wget http://apache.saix.net/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
-tar xzvf apache-maven-3.3.9-bin.tar.gz
-mv apache-maven-3.3.9 /opt/
+tar -xzvf apache-maven-3.3.9-bin.tar.gz -C /opt/
+#mv apache-maven-3.3.9 /opt/
 ln -s /opt/apache-maven-3.3.9/bin/mvn /usr/local/bin/mvn
 chmod 755 /usr/local/bin/mvn
+
+#set the JAVA_HOME for maven 
+echo JAVA_HOME="/usr/lib/jvm/java-8-oracle/" >> /etc/environment
+source /etc/environment
 
 #Improve overall system performance
 echo vm.swappiness = 10 >> /etc/sysctl.conf
