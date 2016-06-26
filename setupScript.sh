@@ -20,6 +20,7 @@ apt-get install rar bzip2 zip p7zip  -y
 
 #Package managers
 apt-get install gdebi -y
+# apt-get install synaptic -y
 
 #Tex editor along with most of the important LaTex files
 apt-get install kile -y
@@ -27,6 +28,8 @@ apt-get install kile -y
 #Text Editors
 apt-get install sublime-text-installer -y
 apt-get install scite -y
+
+apt-get install chromium-browser -y
 	
 #Maven install (This link might need to be updated from time to time)
 wget http://apache.saix.net/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
