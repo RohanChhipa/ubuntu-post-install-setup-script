@@ -13,8 +13,12 @@ apt-get dist-upgrade -y
 apt-get install oracle-java8-installer -y
 apt-get install sublime-text-installer -y
 
+#Compression algorithms
+apt-get install rar bzip2 zip p7zip  -y
+
 apt-get install gdebi -y
 
+#Tex editor along with most of the important LaTex files
 apt-get install kile -y
 	
 #Maven install (This link might need to be updated from time to time)
@@ -28,8 +32,10 @@ chmod 755 /usr/local/bin/mvn
 echo vm.swappiness = 10 >> /etc/sysctl.conf
 echo vm.vfs_cache_pressure = 50 >> /etc/sysctl.conf
 
-apt-get autoremove
-apt-get autoclean
+apt-get autoremove -y
+apt-get autoclean -y
 
 cd ..
+rm -rf .tmpDir
+
 reboot
