@@ -43,7 +43,6 @@ source /etc/environment
 
 #Improve overall system performance
 echo vm.swappiness = 10 >> /etc/sysctl.conf
-echo vm.vfs_cache_pressure = 50 >> /etc/sysctl.conf
 
 apt-get autoremove -y
 apt-get autoclean -y
