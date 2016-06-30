@@ -27,6 +27,10 @@ apt-get install kile -y
 apt-get install sublime-text-installer -y
 apt-get install scite -y
 
+#Media
+apt-get install ubuntu-restricted-extras -y
+apt-get install vlc -y
+
 apt-get install git
 apt-get install chromium-browser -y
 	
@@ -42,6 +46,7 @@ source /etc/environment
 
 #Improve overall system performance
 echo vm.swappiness = 10 >> /etc/sysctl.conf
+apt-get install preload -y
 
 apt-get autoremove -y
 apt-get autoclean -y
