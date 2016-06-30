@@ -29,6 +29,7 @@ apt-get install kile -y
 apt-get install sublime-text-installer -y
 apt-get install scite -y
 
+apt-get install git
 apt-get install chromium-browser -y
 	
 #Maven install (This link might need to be updated from time to time)
