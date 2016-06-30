@@ -1,5 +1,3 @@
-sudo -s
-
 mkdir .tmpDir
 cd .tmpDir/
 
